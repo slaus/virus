@@ -1,0 +1,43 @@
+/*!
+ * Main content
+ */
+
+.main {
+  padding-top: 100px;
+  background: url("../images/bg.jpg") top right no-repeat;
+  background-size: 40%;
+  position: relative;
+
+}
+
+.sticky {
+  position: sticky;
+  left: 0;
+  top: 150px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 300;
+
+  & span {
+    display: block;
+    font-size: 100px;
+    padding-left: 20%;
+  }
+}
+
+h2 {
+  font-size: 58px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: 300;
+}
+
+.time {
+  font-size: 68px;
+  font-weight: 300;
+}

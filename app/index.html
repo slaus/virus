@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>gulp-starter</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="author" content="slaus"/>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="text/html"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+
+    <meta name="msapplication-TileImage" content="images/favicon.png">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.png" sizes="32x32"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="images/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="images/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="images/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/css3-mediaqueries.min.js"></script>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('main');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="wrapper">
+    <header class="header">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" class="img-fluid" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ubermenu">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" href="#main">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#what">Что нужно знать</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-uppercase text-uppercase" href="#"
+                               id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                Комплекты
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Комплект 1</a>
+                                <a class="dropdown-item" href="#">Комплект 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Все включено</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#virus">Коронавирус</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-danger ml-4 text-uppercase" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                        Купить защиту от Covid-19
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section-header my-5 py-5" id="main">
+            <div class="container">
+                <div class="d-flex w-100 flex-row justify-content-start">
+                    <div class="text-uppercase w-50">
+                        ПРОТИВОСТОЯНИЕ С ВИРУСОМ ПРОДОЛЖАЕТСЯ
+                    </div>
+                    <div class="text-uppercase marquee-string w-25">
+                        <div class="marquee text-black-50">
+                            Инструкция — Что делать — Как защититься — Инструкция — Что делать — Как защититься —
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column my-5">
+                    <h1>КОРОНАВИРУС <span>COVID-19</span></h1>
+
+                </div>
+                <div class="d-flex w-100 flex-row justify-content-between align-items-center">
+                    <div class="py-3 pr-3 pl-0">
+                        <img src="images/who.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="p-3 px-5 large">
+                        Что нужно обязательно знать и как уберечь себя от коронавируса
+                    </div>
+                    <div class="py-3 pl-3 pr-0">
+                        <a href="#rulers" class="btn btn-danger btn-lg text-uppercase">
+                            Посмотреть 12 правил
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex flex-row my-5 py-4">
+                    <div class="col-12 col-md-8 frame">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6uu1MGyGjvI"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen=""></iframe>
+                    </div>
+                    <div class="position-relative py-5 px-4">
+                        <h4 class="w-75 my-5">РАСПРОСТРАНЕНИЕ ВИРУСА COVID-19</h4>
+                        <div class="line"></div>
+                        <p class="large">Смотреть видео</p>
+                        <p class="time red">3:10 мин</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-main">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="col-12 col-sm-4 col-md-3 text-uppercase red large font-weight-normal position-relative">
+                        <div class="sticky">
+                            Как распознать<br>
+                            Что делать<br>
+                            Как предотвратить<br>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-9 main-content">
+                        <h2 class="text-uppercase red w-50 mb-5">КОРОНАВИРУС УЖЕ В СТРАНЕ</h2>
+                        <p class="large">Это острое вирусное заболевание похоже на обычный грипп.
+                            Только коронавирус опасен тем, что поражает дыхательную систему и желудок.
+                            Это может привести к пневмонии с осложнениями, и даже, в крайних случаях,
+                            к летальному исходу.</p>
+                        <h3 class="text-uppercase my-4" id="what">ВЫ НЕ ПОЛУЧИЛИ<br>ИНСТРУКЦИЮ ОТ МОЗ?</h3>
+                        <h3 class="text-uppercase red my-4">Инструкция ОТ НАС!</h3>
+                        <p>Если вы заметили, что у вас:</p>
+                        <ul>
+                            <li>сильно поднялась температура;</li>
+                            <li>тяжело дышать;</li>
+                            <li>есть резь в горле и сухой кашель;</li>
+                            <li>накатывает ужасная усталость;</li>
+                            <li>больно глотать и чихать;</li>
+                            <li>сильно болит голова;</li>
+                            <li>возникла боль в мышцах;</li>
+                            <li>чувствуете озноб...</li>
+                        </ul>
+
+                        <h3 class="text-uppercase red my-5">ВСЁ ЭТО МОЖЕТ БЫТЬ ПЕРВЫМ ПРИЗНАКОМ КОРОНАВИРУСА!</h3>
+                        <h2 class="text-uppercase red my-5">ОБНАРУЖИВ ХОТЯ БЫ ОДИН СИМПТОМ:</h2>
+                        <ul class="large">
+                            <li>не выходите на улицу без крайней необходимости;</li>
+                            <li>минимизируйте контакты с людьми;</li>
+                            <li>немедленно обратитесь к врачу.</li>
+                        </ul>
+                        <div class="alert alert-danger pt-5 px-5 pb-4 my-5">
+                            <h4 class="alert-heading">И главное — не стоит паниковать!</h4>
+                            <p class="large"><b>Помните — коронавирус излечим</b>, особенно на ранних стадиях.
+                                Чем раньше вы выявите болезнь и предпримете меры
+                                — тем больше шансов, что вскоре вы будете здоровы.</p>
+                        </div>
+                        <div class="text-uppercase marquee-string" id="rulers">
+                            <div class="marquee red large">
+                                Не паниковать! — Не паниковать! — Не паниковать! — Не паниковать! —
+                            </div>
+                        </div>
+                        <h2 class="text-uppercase red my-5">
+                            КАК ПРЕДОТВРАТИТЬ ИНФЕКЦИЮ?
+                        </h2>
+                        <p class="large"><b>Помните — коронавирус передается воздушно-капельным путем.</b></p>
+                        <p>
+                            Чтоб не подхватить инфекцию:</p>
+                        <ul>
+                            <li>Не контактируйте с теми, кто уже заболел гриппом;</li>
+                            <li>Мойте руки с мылом подольше, не меньше 20-ти секунд;</li>
+                            <li>Носите с собой антисептик и салфетки;</li>
+                            <li>Не касайтесь глаз, носа и рта немытыми руками;</li>
+                            <li>Используйте термообработку еды. Особенно мяса и яиц;</li>
+                            <li>Избегайте контактов с больными животными;</li>
+                            <li>Поменьше касайтесь предметов в общественных местах;</li>
+                            <li>Не ешьте из общих упаковок и посуды;</li>
+                            <li>Избегайте рукопожатий и поцелуев в щеку;</li>
+                            <li>Сами прикрывайте рот и нос если кашляете или чихнули;</li>
+                            <li>Используйте противовирусные и иммуностимулирующие мази;</li>
+                            <li>Носите медицинские маски в общественных местах.</li>
+                            <li>И меняйте их раз в 3 часа.</li>
+                        </ul>
+                        <div class="p-4" id="virus"></div>
+                        <h3 class="text-uppercase my-5">НАПОМИНАЕМ, ЧТО В ОСОБОЙ ГРУППЕ РИСКА ПО ЗАРАЖЕНИЮ КОРОНАВИРУСОМ СОСТОЯТ:</h3>
+                        <div class="row">
+                            <div class="col-4 p-5">
+                                <img src="images/old_1.svg" class="img-fluid mb-3" alt="">
+                                <p>пожилые люди в возрасте 80+</p>
+                            </div>
+                            <div class="col-4 p-5">
+                                <img src="images/asthma.svg" class="img-fluid mb-3" alt="">
+                                <p>люди с заболеванием дыхательной системы</p>
+                            </div>
+                            <div class="col-4 p-5">
+                                <img src="images/diabetes.svg" class="img-fluid mb-3" alt="">
+                                <p>больные сахарным диабетом</p>
+                            </div>
+                        </div>
+                        <div class="alert alert-danger pt-5 px-5 pb-4">
+                            <p class="large">Не забывайте проветривать помещение, в котором находитесь. Следите за гигиеной себя и своих детей.
+                                Помните, что во время эпидемии нельзя пользоваться чужой зубной щеткой, полотенцем и другими предметами личной гигиены.</p>
+                        </div>
+                        <h3 class="my-5">Количество заболевших людей в мире по данным Всемирной Организации Здравоохранения на вчерашнее число</h3>
+                        <iframe src="https://data.nbcstations.com/national/2020/coronavirus/animated-map/" width="100%" height="1100" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <p class="large">Данные обновляются каждый день</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p><b>Берегитесь и будьте здоровы!</b></p>
+                            <p>Вопросы и предложения <a class="large" href="mailto:antivirus-covid-19.com"><span class="text-nowrap">info@antivirus-covid-19.com</span></a></p>
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <p>2020 &copy; Все права защищены.</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p>Политика конфиденциальности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="back-to-top" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis ab veniam, repellat
+                    asperiores assumenda harum saepe delectus quisquam aliquam ex quaerat, porro deserunt, itaque
+                    recusandae accusantium quos? Molestiae, at.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.jcarousel.min.js"></script>
+<script src="js/jquery.matchHeight-min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/script.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>
