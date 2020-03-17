@@ -45,6 +45,20 @@ $('#back-to-top').click(function () {
 //Carousel responsive
 $(function () {
 
+
+    $.getJSON("//ip-api.com/json/?lang=ru", function(data) {
+        var data_body = "";
+        $.each(data, function(k, v) {
+            data_body += "<b>" + k + "</b> : <i>" + v + "</i><br />";
+        });
+        $(".city").text(data.city);
+        // Google Map
+        var locations = [
+            [data_body, data.lat, data.lon, 2]  //Данные из IP API
+        ];
+    });
+
+
     var jcarousel = $('.jcarousel');
 
     jcarousel

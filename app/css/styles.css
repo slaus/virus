@@ -233,6 +233,9 @@ a, a:hover {
 .red {
   color: #ff0000; }
 
+.marquee {
+  height: 23px; }
+
 /*!
  * Header content
  */
@@ -253,22 +256,56 @@ a, a:hover {
 h1 {
   font-size: 80px;
   font-weight: 300; }
+  @media (min-width: 576px) and (max-width: 767px) {
+    h1 {
+      font-size: 60px; } }
+  @media (max-width: 575px) {
+    h1 {
+      font-size: 54px; } }
   h1 span {
     display: block;
     font-size: 100px;
-    padding-left: 20%; }
+    padding-left: 0; }
+    @media (min-width: 576px) and (max-width: 767px) {
+      h1 span {
+        font-size: 80px; } }
+    @media (max-width: 575px) {
+      h1 span {
+        font-size: 80px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      h1 span {
+        padding-left: 20%; } }
+    @media (min-width: 1200px) {
+      h1 span {
+        padding-left: 20%; } }
 
 h2 {
   font-size: 58px;
   font-weight: 300; }
+  @media (min-width: 576px) and (max-width: 767px) {
+    h2 {
+      font-size: 50px; } }
+  @media (max-width: 575px) {
+    h2 {
+      font-size: 48px; } }
 
 h3 {
   font-size: 38px;
   font-weight: 300; }
+  @media (min-width: 576px) and (max-width: 767px) {
+    h3 {
+      font-size: 34px; } }
+  @media (max-width: 575px) {
+    h3 {
+      font-size: 30px; } }
 
 .time {
   font-size: 68px;
   font-weight: 300; }
+
+iframe {
+  overflow: hidden;
+  min-height: 380px; }
 
 /*!
  * Footer content

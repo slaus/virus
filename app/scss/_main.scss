@@ -20,24 +20,70 @@ h1 {
   font-size: 80px;
   font-weight: 300;
 
+  @include sm() {
+    font-size: 60px;
+  }
+
+  @include xs() {
+    font-size: 54px;
+  }
+
   & span {
     display: block;
     font-size: 100px;
-    padding-left: 20%;
+    padding-left: 0;
+
+    @include sm() {
+      font-size: 80px;
+    }
+
+    @include xs() {
+      font-size: 80px;
+    }
+
+    @include lg() {
+      padding-left: 20%;
+    }
+
+    @include xl() {
+      padding-left: 20%;
+    }
   }
 }
 
 h2 {
   font-size: 58px;
   font-weight: 300;
+
+  @include sm() {
+    font-size: 50px;
+  }
+
+  @include xs() {
+    font-size: 48px;
+  }
 }
 
 h3 {
   font-size: 38px;
   font-weight: 300;
+
+  @include sm() {
+    font-size: 34px;
+  }
+
+  @include xs() {
+    font-size: 30px;
+  }
 }
 
 .time {
   font-size: 68px;
   font-weight: 300;
+}
+
+
+iframe {
+  overflow: hidden;
+  min-height: 380px;
 }
