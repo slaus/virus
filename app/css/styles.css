@@ -5,8 +5,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,500,900&display=swap");
 @font-face {
   font-family: "Glyphicons Halflings";
-  font-style: "normal";
-  font-weight: "300";
+  font-style: normal;
+  font-weight: 300;
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#Glyphicons Halflings") format("svg");
   -webkit-font-smoothing: antialiased;
@@ -14,8 +14,8 @@
 
 @font-face {
   font-family: "Font Awesome";
-  font-style: "normal";
-  font-weight: "300";
+  font-style: normal;
+  font-weight: 300;
   src: url("../fonts/fontawesome-webfont.eot");
   src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#Font Awesome") format("svg");
   -webkit-font-smoothing: antialiased;
@@ -48,6 +48,9 @@ input:focus, textarea, a, button {
 
 a, a:hover {
   color: #ff0000;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -moz-transition: .3s;
   transition: .3s; }
 
 .clearfix:after, .clearfix:before {
@@ -61,9 +64,15 @@ a, a:hover {
 .btn.btn-danger {
   background: #ff0000;
   border-radius: 0 !important;
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  -moz-transition: background-color .3s;
   transition: background-color .3s; }
   .btn.btn-danger:hover {
     background: #db0000;
+    -webkit-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -moz-transition: background-color .3s;
     transition: background-color .3s; }
 
 .alert.alert-danger {
@@ -122,8 +131,14 @@ a, a:hover {
   transform: scale(1.05); }
 
 .animate {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  -moz-transition: .3s;
   transition: .3s; }
   .animate:hover {
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -moz-transition: .3s;
     transition: .3s; }
 
 /* Костыль для Safari*/
@@ -185,8 +200,6 @@ a, a:hover {
   text-align: center;
   color: #fff;
   text-decoration: none;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
   border-radius: 30px; }
 
 .jcarousel-control-prev {
@@ -202,6 +215,8 @@ a, a:hover {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   margin: 0;
   text-align: center; }
@@ -224,7 +239,6 @@ a, a:hover {
   color: #fff;
   opacity: 1;
   -webkit-box-shadow: 0 0 2px #F0EFE7;
-  -moz-box-shadow: 0 0 2px #F0EFE7;
   box-shadow: 0 0 2px #F0EFE7; }
 
 .large {
@@ -249,6 +263,7 @@ a, a:hover {
   position: relative; }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
   left: 0;
   top: 150px; }
@@ -306,6 +321,10 @@ h3 {
 iframe {
   overflow: hidden;
   min-height: 380px; }
+
+.modal-body {
+  font-size: 14px;
+  line-height: 18px; }
 
 /*!
  * Footer content
